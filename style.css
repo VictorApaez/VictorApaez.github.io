@@ -61,7 +61,7 @@ header {
   height: calc(100vh - 40px);
   width: 100%;
   margin-top: 40px;
-  background: url(/Images/bg4.jpg);
+  background: url(./images/bg4.jpg);
   background-size: cover;
   color: white;
 }
