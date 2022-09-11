@@ -1,0 +1,148 @@
+/* light-blue rgb(4,114,135) */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0px 5px 40px 3px rgba(0, 0, 0, 1);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 30px;
+}
+.nav__ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.nav__li {
+  margin: 0 15px;
+}
+
+.nav__li > a {
+  text-decoration: none;
+  padding: 2px;
+  color: white;
+}
+.nav__li > a:hover {
+  border-bottom: 2px solid #e63946;
+}
+
+.material-symbols-outlined {
+  opacity: 0;
+  margin-right: 10px;
+}
+
+/* HERO SECTION ----------------------------------- */
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 40px);
+  width: 100%;
+  margin-top: 40px;
+  background: url(/Images/bg4.jpg);
+  background-size: cover;
+  color: white;
+}
+
+.hero__info {
+  margin: 30px;
+  max-width: 300px;
+  padding: 10px;
+}
+.hero__h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+.hero__subHeading {
+  margin-bottom: 10px;
+}
+.hero__p {
+  margin-bottom: 20px;
+}
+.hero__btn {
+  border-radius: 25px;
+  border: 1px solid #e63946;
+  background-color: #e63946;
+  color: white;
+  height: 30px;
+  width: 100px;
+}
+.hero__btn:hover {
+  cursor: pointer;
+}
+
+.hero__img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid white;
+  padding: 5px;
+}
+
+/* ========FOOTER================================== */
+
+footer {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* ============MEDIA QUERIES======================= */
+
+@media (max-width: 460px) {
+  .hero {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  header {
+    justify-content: flex-end;
+  }
+  .hero__img {
+    width: 120px;
+    height: auto;
+  }
+  .hero__info {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero__h1 {
+    font-size: 1.7rem;
+  }
+  .hero__p {
+    text-align: center;
+  }
+  .material-symbols-outlined {
+    opacity: 1;
+  }
+  .nav {
+    display: none;
+  }
+}
