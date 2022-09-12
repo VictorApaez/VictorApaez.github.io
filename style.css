@@ -68,7 +68,6 @@ header {
 }
 
 .hero__info {
-  /* margin: 30px; */
   max-width: 500px;
   padding: 10px;
 }
@@ -104,14 +103,77 @@ header {
   padding: 5px;
 }
 
-/* ========FOOTER================================== */
-
-footer {
-  width: 100%;
-  height: 120px;
+/* ======== ABOUT ================================== */
+.about {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  width: 100%;
+  max-width: 800px;
+  padding: 50px;
+}
+.about__img {
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid #e63946;
+  padding: 5px;
+}
+.about__info {
+  margin-right: 30px;
+  line-height: 35px;
+  width: 100%;
+}
+.about__h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+.about__p {
+}
+/* ======== PROJECTS ================================== */
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(1, 49, 61);
+  color: white;
+  width: 100%;
+  padding: 40px;
+}
+.project {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 10px;
+  border-bottom: 1px solid rgb(133, 133, 133);
+}
+.project__img {
+  height: 200px;
+  width: 200px;
+  background-color: black;
+  margin: 20px 30px;
+}
+.project__info {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  justify-content: center;
+}
+.project__title {
+  margin-bottom: 10px;
+  color: #e63946;
+}
+.project__description {
+  line-height: 25px;
+}
+/* ======== FOOTER ================================== */
+
+footer {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
 }
 
 /* ============MEDIA QUERIES======================= */
@@ -148,5 +210,30 @@ footer {
   }
   .nav {
     display: none;
+  }
+  /* ======== ABOUT ================================== */
+  .about {
+    flex-direction: column-reverse;
+  }
+  .about__img {
+    margin-bottom: 40px;
+    margin-right: 0;
+  }
+  .about__info {
+    padding: 0 40px;
+  }
+  .about__h2 {
+    text-align: center;
+  }
+  /* ======== PROJECT ================================== */
+  .project {
+    flex-direction: column;
+    align-items: center;
+  }
+  .project__info {
+    align-items: center;
+  }
+  .reverse {
+    flex-direction: column-reverse;
   }
 }
