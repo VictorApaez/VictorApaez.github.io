@@ -21,6 +21,7 @@ header {
   height: 60px;
   background-color: rgb(0, 0, 0);
   box-shadow: 0px 5px 40px 3px rgba(0, 0, 0, 1);
+  z-index: 999;
 }
 
 .nav {
@@ -90,9 +91,12 @@ header {
   font-size: 1rem;
   height: 40px;
   width: 150px;
+  transition-property: transform;
+  transition-duration: 0.5s;
 }
 .hero__btn:hover {
   cursor: pointer;
+  transform: scale(1.1);
 }
 
 .hero__img {
@@ -148,9 +152,17 @@ header {
 }
 .project__img {
   height: 200px;
-  width: 200px;
+  width: 100%;
+  object-fit: cover;
   background-color: black;
   margin: 20px 30px;
+  transition-property: transform;
+  transition-duration: 0.5s;
+}
+.project__img:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 1px 25px 5px black;
+  cursor: pointer;
 }
 .project__info {
   display: flex;
@@ -179,6 +191,9 @@ footer {
 /* ============MEDIA QUERIES======================= */
 
 @media (max-width: 640px) {
+  .toggle {
+    display: none;
+  }
   .hero {
     flex-direction: column-reverse;
     align-items: center;
@@ -208,9 +223,7 @@ footer {
     opacity: 1;
     font-size: 40px !important;
   }
-  .nav {
-    display: none;
-  }
+
   /* ======== ABOUT ================================== */
   .about {
     flex-direction: column-reverse;
@@ -229,6 +242,9 @@ footer {
   .project {
     flex-direction: column;
     align-items: center;
+  }
+  .project__img {
+    margin-bottom: 40px;
   }
   .project__info {
     align-items: center;
