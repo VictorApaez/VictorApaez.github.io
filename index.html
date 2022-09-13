@@ -16,10 +16,10 @@
   <header>
     <nav class="nav toggle">
       <ul class="nav__ul">
-        <li class="nav__li"><a class="nav__about selected" href="#">Home</a></li>
-        <li class="nav__li "><a class="nav__about " href="#">About</a></li>
-        <li class="nav__li"><a class="nav__Projects nav__selected" href="#">Projects</a></li>
-        <li class="nav__li"><a class="nav__contact" href="#">Contact</a></li>
+        <li class="nav__li"><a class="nav__about selected" href="#home">Home</a></li>
+        <li class="nav__li "><a class="nav__about " href="#about">About</a></li>
+        <li class="nav__li"><a class="nav__Projects nav__selected" href="#projects">Projects</a></li>
+        <li class="nav__li"><a class="nav__contact" href="#contact">Contact</a></li>
 
       </ul>
     </nav>
@@ -28,7 +28,7 @@
     </span>
   </header>
   <!--================= HERO ========================-->
-  <section class="hero">
+  <section class="hero" id="home">
     <div class="hero__info">
 
       <h1 class="hero__h1">Victor Apaez</h1>
@@ -40,7 +40,7 @@
     </div>
   </section>
   <!--================= ABOUT ========================-->
-  <section class="about">
+  <section class="about" id="about">
     <div class="about__info">
       <h2 class="about__h2">About me</h2>
       <p class="about__p">
@@ -56,7 +56,7 @@
     <img class="about__img" src="/images/profile-pic.jpg" alt="">
   </section>
   <!--================= PROJECTS ========================-->
-  <section class="projects">
+  <section class="projects" id="projects">
     <div class="project">
       <img class="project__img airbnb" src="/images/airbnb.png" alt="">
       <div class="project__info">
@@ -88,20 +88,22 @@
     </div>
   </section>
   <!--================= CONTACT ========================-->
-  <form method="get">
-    <h1>Contact me!</h1>
-    <label>Name:
-      <input type="text" name="submitted-name" autocomplete="name">
-    </label>
-    <label>Email:
-      <input type="text" name="submitted-email" autocomplete="email">
-    </label>
-    <!-- <label>Message -->
-    <textarea name="" id="" cols="30" rows="10"></textarea>
-    <!-- </label> -->
+  <section class="contact" id="contact">
+    <form method="get">
+      <h1>Contact me!</h1>
+      <label>Name:
+        <input type="text" name="submitted-name" autocomplete="name">
+      </label>
+      <label>Email:
+        <input type="text" name="submitted-email" autocomplete="email">
+      </label>
+      <!-- <label>Message -->
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+      <!-- </label> -->
 
-    <button class="hero__btn">Submit</button>
-  </form>
+      <button class="hero__btn">Submit</button>
+    </form>
+  </section>
 
   <!--================= SKILLS ========================-->
 

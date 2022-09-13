@@ -4,6 +4,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: white;
@@ -46,6 +49,7 @@ header {
 }
 .nav__li > a:hover {
   border-bottom: 2px solid #e63946;
+  cursor: url("/images/pointing-finger.png"), auto;
 }
 
 .material-symbols-outlined {
@@ -59,10 +63,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 60px);
+  height: 100vh;
   width: 100%;
-  margin-top: 60px;
-  padding: 30px;
+  /* padding: 30px; */
   background: url(./images/bg4.jpg);
   background-size: cover;
   color: white;
@@ -97,6 +100,7 @@ header {
 .hero__btn:hover {
   cursor: pointer;
   transform: scale(1.1);
+  cursor: url("/images/pointing-finger.png"), auto;
 }
 
 .hero__img {
@@ -114,7 +118,7 @@ header {
   align-items: center;
   width: 100%;
   max-width: 800px;
-  padding: 50px;
+  padding: 130px 30px;
 }
 .about__img {
   height: 200px;
@@ -142,7 +146,7 @@ header {
   background-color: rgb(1, 49, 61);
   color: white;
   width: 100%;
-  padding: 40px;
+  padding: 60px 0;
 }
 .project {
   display: flex;
@@ -158,11 +162,11 @@ header {
   margin: 20px 30px;
   transition-property: transform;
   transition-duration: 0.5s;
+  cursor: url("/images/pointing-finger.png"), auto;
 }
 .project__img:hover {
   transform: scale(1.1);
   box-shadow: 1px 1px 25px 5px black;
-  cursor: pointer;
 }
 .project__info {
   display: flex;
@@ -177,7 +181,10 @@ header {
 .project__description {
   line-height: 25px;
 }
-/* ======== FORM ================================== */
+/* ======== CONTACT ================================== */
+.contact {
+  padding: 60px 0;
+}
 form {
   display: flex;
   flex-direction: column;
