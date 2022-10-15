@@ -13,14 +13,13 @@
 
 <body>
   <!--================= HEADER ========================-->
-  <header>
-    <nav class="nav toggle">
+  <header class="scroll-effect">
+    <nav class="nav toggle ">
       <ul class="nav__ul">
-        <li class="nav__li"><a class="nav__about selected" href="#home">Home</a></li>
+        <li class="nav__li"><a class="nav__about selected" href="#hero">Home</a></li>
         <li class="nav__li "><a class="nav__about " href="#about">About</a></li>
         <li class="nav__li"><a class="nav__Projects nav__selected" href="#projects">Projects</a></li>
         <li class="nav__li"><a class="nav__contact" href="#contact">Contact</a></li>
-
       </ul>
     </nav>
     <span class="material-symbols-outlined" style="color: white;">
@@ -28,14 +27,14 @@
     </span>
   </header>
   <!--================= HERO ========================-->
-  <section class="hero" id="home">
+  <section id="hero">
     <div class="hero__info">
 
       <h1 class="hero__h1">Victor Apaez</h1>
       <h4 class="hero__subHeading">Software Engineer</h4>
-      <p class="hero__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum iure minima quae nobis.
-      </p>
-      <button class="hero__btn">Contact me</button>
+      <p class="hero__p">Eager to bring forward innovative and creative solutions to improve the way we interact with
+        technology.</p>
+      <a class="hero__btn" href="#contact">Contact me</a>
 
     </div>
   </section>
@@ -57,6 +56,7 @@
   </section>
   <!--================= PROJECTS ========================-->
   <section class="projects" id="projects">
+    <h1 class="projects__header">Projects</h1>
     <div class="project">
       <img class="project__img airbnb" src="/images/airbnb.png" alt="">
       <div class="project__info">
@@ -88,28 +88,21 @@
     </div>
   </section>
   <!--================= CONTACT ========================-->
-  <section class="contact" id="contact">
-    <form method="get">
-      <h1>Contact me!</h1>
-      <label>Name:
-        <input type="text" name="submitted-name" autocomplete="name">
-      </label>
-      <label>Email:
-        <input type="text" name="submitted-email" autocomplete="email">
-      </label>
-      <!-- <label>Message -->
-      <textarea name="" id="" cols="30" rows="10"></textarea>
-      <!-- </label> -->
+  <section id="contact">
 
-      <button class="hero__btn">Submit</button>
-    </form>
   </section>
-
   <!--================= SKILLS ========================-->
-
   <!--================= FOOTER ========================-->
   <footer>
-
+    <div class="footer__logos">
+      <a href="https://www.linkedin.com/in/victor-apaez" target="_blank">
+        <img src="./images/linkedin-logo.png" alt="Linkedin logo">
+      </a>
+      <a href="https://www.github.com/VictorApaez" target="_blank">
+        <img src="./images/github120px.png" alt="Github logo">
+      </a>
+    </div>
+    <p>© Victor Apaez</p>
   </footer>
 
   <script src="script.js"></script>
