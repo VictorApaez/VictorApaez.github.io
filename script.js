@@ -11,6 +11,7 @@ burgerIcon.addEventListener("click", () => {
 links.forEach((link) => {
   link.addEventListener("click", () => {
     nav.classList.toggle("toggle");
+    header.classList.toggle("scroll-effect");
   });
 });
 
