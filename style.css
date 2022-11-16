@@ -162,17 +162,18 @@ header {
 }
 .project__img {
   height: 200px;
-  width: 100%;
+  width: 350px;
   object-fit: cover;
   background-color: black;
   margin: 20px 30px;
-  transition-property: transform;
-  transition-duration: 0.5s;
+  transition: all 0.3s ease-in-out;
+  /* transition-property: transform;
+  transition-duration: 0.5s; */
   cursor: url("/images/pointing-finger.png"), auto;
 }
 .project__img:hover {
   transform: scale(1.1);
-  box-shadow: 1px 1px 25px 5px black;
+  box-shadow: 1px 1px 25px 1px black;
 }
 .project__info {
   display: flex;
