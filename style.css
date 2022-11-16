@@ -74,7 +74,7 @@ header {
 
 .hero__info {
   max-width: 500px;
-  padding: 10px;
+  padding: 20px;
 }
 .hero__h1 {
   font-size: 3.8rem;
@@ -112,6 +112,12 @@ header {
 /* ======== ABOUT ================================== */
 .about {
   display: flex;
+  justify-content: center;
+  background-color: rgb(234, 234, 234);
+  width: 100%;
+}
+.about-container {
+  display: flex;
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
@@ -119,7 +125,7 @@ header {
   padding: 130px 30px;
 }
 .about__img {
-  height: 200px;
+  width: 200px;
   border-radius: 50%;
   border: 2px solid #e63946;
   padding: 5px;
@@ -141,34 +147,37 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(1, 49, 61);
+  background-color: rgb(30, 30, 30);
   color: white;
   width: 100%;
-  padding: 60px 0;
+  padding: 60px 40px;
 }
 .projects__header {
   font-size: 2.5rem;
   text-align: center;
   width: 90%;
   padding-bottom: 20px;
-  border-bottom: 1px solid rgb(133, 133, 133);
+  /* border-bottom: 1px solid rgb(133, 133, 133); */
   margin-bottom: 30px;
 }
 .project {
   display: flex;
+  max-width: 810px;
+  width: 100%;
   justify-content: space-between;
-  padding: 30px 10px;
-  border-bottom: 1px solid rgb(133, 133, 133);
+  padding: 20px 20px;
+  background-color: rgb(36, 36, 36);
+  color: white;
+  margin: 10px;
 }
 .project__img {
   height: 200px;
   width: 350px;
   object-fit: cover;
   background-color: black;
-  margin: 20px 30px;
+  display: block;
+  /* margin: 20px 30px; */
   transition: all 0.3s ease-in-out;
-  /* transition-property: transform;
-  transition-duration: 0.5s; */
   cursor: url("/images/pointing-finger.png"), auto;
 }
 .project__img:hover {
@@ -178,23 +187,57 @@ header {
 .project__info {
   display: flex;
   flex-direction: column;
-  max-width: 300px;
+  /* padding: 30px; */
+  max-width: 350px;
   justify-content: center;
 }
 .project__title {
   margin-bottom: 10px;
-  color: #e63946;
+  color: #ededed;
 }
 .project__description {
   line-height: 25px;
 }
 /* ======== CONTACT ================================== */
-/* #contact {
-  padding: 60px 0;
-  background-color: yellow;
+#contact {
+  padding: 60px 20px;
   width: 100%;
-  text-align: center;
-} */
+  display: flex;
+  justify-content: center;
+}
+.contact-container {
+  background-color: rgb(36, 36, 36);
+  border-radius: 10px;
+  padding: 50px;
+  color: rgb(194, 194, 194);
+  max-width: 600px;
+}
+.contact-container > p {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+.contact-container > h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.contact-container > h5 {
+  font-size: 1rem;
+}
+.contact-container > h5 > a {
+  text-decoration: none;
+  color: rgb(57, 130, 214);
+}
+.contact-linkedIn {
+  margin-top: 20px;
+  background-color: black;
+  padding: 20px 20px;
+  border-radius: 10px;
+}
+.contact-linkedIn-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
 /* ======== FOOTER ================================== */
 
 footer {
@@ -231,7 +274,7 @@ footer > p {
 
 /* ============MEDIA QUERIES======================= */
 
-@media (max-width: 640px) {
+@media (max-width: 700px) {
   .toggle {
     transform: translateX(500px);
   }
@@ -308,7 +351,7 @@ footer > p {
   }
 
   /* ======== ABOUT ================================== */
-  .about {
+  .about-container {
     flex-direction: column-reverse;
   }
   .about__img {
@@ -317,6 +360,8 @@ footer > p {
   }
   .about__info {
     padding: 0 40px;
+    text-align: justify;
+    margin-right: 0px;
   }
   .about__h2 {
     text-align: center;
@@ -327,12 +372,21 @@ footer > p {
     align-items: center;
   }
   .project__img {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
   .project__info {
     align-items: center;
   }
   .reverse {
     flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 800px) {
+  .project__img {
+    width: 300px;
+  }
+  .project__info {
+    width: 300px;
   }
 }
