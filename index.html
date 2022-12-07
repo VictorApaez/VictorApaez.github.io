@@ -10,6 +10,8 @@
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
   <title>Victor Apaez</title>
 </head>
@@ -25,10 +27,10 @@
         <li class="nav__li"><a class="nav__contact" href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <span class="material-symbols-outlined open-menu" style="color: white;">
+    <span class="material-symbols-outlined open-menu menu-icon" style="color: white;">
       menu
     </span>
-    <span class="material-symbols-outlined close-menu" style="color: white; display: none;">
+    <span class="material-symbols-outlined close-menu menu-icon" style="color: white; display: none;">
       close
     </span>
   </header>
@@ -40,7 +42,14 @@
       <h4 class="hero__subHeading">Software Engineer</h4>
       <p class="hero__p">Eager to bring forward innovative and creative solutions to improve the way we interact with
         technology.</p>
-      <a class="hero__btn" href="#contact">Contact me</a>
+      <div class="button-container">
+        <a class="hero__btn" href="#contact">Contact me</a>
+        <a class="hero__btn" href="./images/VictorApaezResume.pdf" download="VictorApaezResume"><span
+            class="material-symbols-outlined download-icon">
+            download
+          </span>Resume</a>
+      </div>
+
 
     </div>
   </section>
@@ -74,19 +83,20 @@
       </a>
       <div class="project__info">
         <h2 class="project__title">The Trailers</h2>
-        <p class="project__description">Developed a Netflix inspired React.js application. Find trailers for movies and
-          TV shows.</p>
+        <p class="project__description">A Netflix replica, this web application has trailers for top rated, now playing,
+          and current entertainment.</p>
       </div>
     </div>
 
     <div class="project reverse">
       <div class="project__info">
         <h2 class="project__title">League of Legends</h2>
-        <p class="project__description">Full Stack Application using MongoDB, Express, React, and Node. Displaying
-          character and items from League of Legends.</p>
+        <p class="project__description">With over 117 million active users on League of Legends, this web
+          application helps gamers search and build teams
+          with their favorite characters and items.</p>
       </div>
       <a href="https://legendsofleague.netlify.app/items" target="_blank">
-        <img class="project__img wendy" src="/images/LoL.png" alt="">
+        <img class="project__img" src="/images/LoL.png" alt="">
       </a>
     </div>
 
@@ -96,9 +106,21 @@
       </a>
       <div class="project__info">
         <h2 class="project__title">Snake Game</h2>
-        <p class="project__description">Slither your way to the apples. Developed the classic snake game using
-          JavaScript and CSS grid to manipulate the DOM.</p>
+        <p class="project__description">Slither your way to the apples. Play the classic snake game in retro arcade
+          format.</p>
       </div>
+    </div>
+
+    <div class="project reverse">
+      <div class="project__info">
+        <h2 class="project__title">Breddit</h2>
+        <p class="project__description">Inspired by Reddit, this web application is a network of communities where
+          people can share their interests and ideas.
+        </p>
+      </div>
+      <a href="https://breddit.netlify.app/" target="_blank">
+        <img class="project__img" src="./images/breddit.png" alt="">
+      </a>
     </div>
   </section>
   <!--================= CONTACT ========================-->
@@ -111,10 +133,10 @@
 " target="_blank">LinkedIn</a>. Please feel free to send a message!
       </h5>
       <div class="contact-linkedIn">
-        <div class="contact-linkedIn-logo">
+        <a href="https://www.linkedin.com/in/victor-apaez" class="contact-linkedIn-logo">
           <img src="./images/linkedin-logo.png" height="40px">
           <h2>LinkedIn</h2>
-        </div>
+        </a>
         <p>www.linkedin.com/in/victor-apaez</p>
       </div>
     </div>

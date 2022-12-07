@@ -6,6 +6,7 @@
 }
 html {
   scroll-behavior: smooth;
+  background-color: black;
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -22,7 +23,7 @@ header {
   top: 0;
   height: 60px;
   width: 100%;
-  background-color: rgb(0, 0, 0);
+  background-color: black;
   box-shadow: 0px 5px 40px 3px rgba(0, 0, 0, 1);
   z-index: 999;
   transition: top 0.5s ease-in-out;
@@ -54,7 +55,7 @@ header {
   cursor: url("/images/pointing-finger.png"), auto;
 }
 
-.material-symbols-outlined {
+.open-menu {
   opacity: 0;
   margin-right: 10px;
 }
@@ -87,6 +88,10 @@ header {
 .hero__p {
   margin-bottom: 30px;
 }
+
+.button-container {
+  display: flex;
+}
 .hero__btn {
   padding: 10px 15px;
   background-color: #e63946;
@@ -94,6 +99,9 @@ header {
   text-decoration: none;
   color: white;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
 }
 .hero__btn:hover {
   cursor: pointer;
@@ -237,7 +245,11 @@ header {
   display: flex;
   align-items: center;
   margin-bottom: 5px;
+  width: fit-content;
+  color: rgb(57, 130, 214);
+  text-decoration: none;
 }
+
 /* ======== FOOTER ================================== */
 
 footer {
@@ -293,9 +305,9 @@ footer > p {
     width: 70%;
     margin: 0;
     background-color: #e63946;
-    transition-property: transform;
+    /* transition-property: transform;
     transition-duration: 0.5s;
-    transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out; */
   }
   .nav__ul {
     flex-direction: column;
@@ -319,13 +331,13 @@ footer > p {
     border: none;
     background-color: #9c1f2a;
   }
-  .material-symbols-outlined {
+  .close-menu {
     margin: 10px;
     position: absolute;
     top: 0;
     right: 0;
   }
-  .material-symbols-outlined:hover {
+  .menu-icon:hover {
     cursor: pointer;
   }
   .hero__img {
@@ -345,7 +357,7 @@ footer > p {
   .hero__p {
     text-align: center;
   }
-  .material-symbols-outlined {
+  .menu-icon {
     opacity: 1;
     font-size: 40px !important;
   }
