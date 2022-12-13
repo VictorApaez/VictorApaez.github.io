@@ -229,7 +229,27 @@ header {
 }
 .project__description {
   line-height: 25px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.project__tech__icons {
+  margin-bottom: 25px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.project__tech__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(146, 146, 146);
+  font-size: 10px;
+}
+.project__tech__icon > img,
+.project__tech__icon > svg {
+  height: 24px;
+  width: 24px;
+  margin: 0px 15px 2px 15px;
 }
 
 .project__btns > a {
@@ -443,3 +463,5 @@ footer > p {
     width: 300px;
   }
 }
+
+/* ICONS ==================================== */
