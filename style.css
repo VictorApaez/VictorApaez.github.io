@@ -51,7 +51,7 @@ header {
   color: white;
 }
 .nav__li > a:hover {
-  border-bottom: 2px solid 
+  border-bottom: 2px solid;
   cursor: url("/images/pointing-finger.png"), auto;
 }
 
@@ -229,6 +229,23 @@ header {
 }
 .project__description {
   line-height: 25px;
+  margin-bottom: 20px;
+}
+
+.project__btns > a {
+  padding: 10px 15px;
+  background-color: #e63946;
+  text-decoration: none;
+  border: none;
+  color: white;
+  border-radius: 40px;
+  transition: all 0.3s ease-in-out;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.project__btns > a:hover {
+  background-color: #9c1f2a;
 }
 /* ======== CONTACT ================================== */
 #contact {
