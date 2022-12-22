@@ -1,0 +1,119 @@
+{
+  "projectsData": [
+    {
+      "demoLink": "https://thetrailers.netlify.app/",
+      "githubLink": "https://github.com/VictorApaez/movie-trailers-app",
+      "img": "/images/theTrailers.png",
+      "alt": "Image of the web app The Trailers",
+      "name": "The Trailers",
+      "desc": "A Netflix replica, this web application has trailers for top rated, now playing,and current entertainment.",
+      "tech": [
+        {
+          "name": "React",
+          "link": "./icons/icons8-react-30.png",
+          "alt": "React Icon"
+        },
+        {
+          "name": "HTML5",
+          "link": "./icons/icons8-html-5.png",
+          "alt": "HTML5 Icon"
+        },
+        {
+          "name": "CSS3",
+          "link": "./icons/icons8-css3-48.png",
+          "alt": "CCS3 Icon"
+        }
+      ]
+    },
+    {
+      "demoLink": "https://legendsofleague.netlify.app/",
+      "githubLink": "https://github.com/durlinlin/Legendary-Slayers-FE",
+      "img": "/images/LoL.png",
+      "alt": "Image of the web app League of Legends",
+      "name": "League of Legends",
+      "desc": "With over 117 million active users on League of Legends, this web application helps gamers search and build teams with their favorite characters and items.",
+      "tech": [
+        {
+          "name": "MongoDB",
+          "link": "./icons/icons8-mongodb.png",
+          "alt": "MongoDB Icon"
+        },
+        {
+          "name": "React",
+          "link": "./icons/icons8-react-30.png",
+          "alt": "React Icon"
+        },
+        {
+          "name": "Express",
+          "link": "./icons/icons8-express-js-30.png",
+          "alt": "Express Icon"
+        },
+        {
+          "name": "Node",
+          "link": "./icons/icons8-node-js-48.png",
+          "alt": "Node Icon"
+        },
+        {
+          "name": "JWT",
+          "link": "./icons/icons8-json-web-token-48.png",
+          "alt": "JWT Icon"
+        }
+      ]
+    },
+    {
+      "demoLink": "https://victorapaez.github.io/snake-game/",
+      "githubLink": "https://github.com/VictorApaez/snake-game",
+      "img": "/images/snakeGame.png",
+      "alt": "Image of the web app game Snake",
+      "name": "Snake Game",
+      "desc": "Slither your way to the apples. Play the classic snake game in retro arcade format",
+      "tech": [
+        {
+          "name": "JavaScript",
+          "link": "./icons/icons8-javascript-48.png",
+          "alt": "JavaScript Icon"
+        },
+        {
+          "name": "HTML5",
+          "link": "./icons/icons8-html-5.png",
+          "alt": "HTML5 Icon"
+        },
+        {
+          "name": "CSS3",
+          "link": "./icons/icons8-css3-48.png",
+          "alt": "CCS3 Icon"
+        }
+      ]
+    },
+    {
+      "demoLink": "https://breddit.netlify.app/",
+      "githubLink": "https://github.com/SEI-Buffleheads/reddit-clone",
+      "img": "./images/breddit.png",
+      "alt": "Image of the web app Breddit",
+      "name": "Breddit",
+      "desc": "Inspired by Reddit, this web application is a network of communities where people can share their interests and ideas.",
+      "tech": [
+        {
+          "name": "MongoDB",
+          "link": "./icons/icons8-mongodb.png",
+          "alt": "MongoDB Icon"
+        },
+        {
+          "name": "React",
+          "link": "./icons/icons8-react-30.png",
+          "alt": "React Icon"
+        },
+        {
+          "name": "Express",
+          "link": "./icons/icons8-express-js-30.png",
+          "alt": "Express Icon"
+        },
+        {
+          "name": "Node",
+          "link": "./icons/icons8-node-js-48.png",
+          "alt": "Node Icon"
+        }
+      ]
+    }
+  ]
+}
