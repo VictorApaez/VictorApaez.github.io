@@ -200,7 +200,7 @@ header {
   padding: 20px 20px;
   background-color: rgb(36, 36, 36);
   color: white;
-  margin: 10px;
+  margin: 50px 10px;
 }
 .project__img {
   height: 200px;
@@ -445,6 +445,7 @@ footer > p {
   .project {
     flex-direction: column;
     align-items: center;
+    margin: 10px;
   }
   .project__img {
     margin-bottom: 20px;
