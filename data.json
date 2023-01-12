@@ -114,6 +114,36 @@
           "alt": "Node Icon"
         }
       ]
+    },
+    {
+      "demoLink": "https://the-book-swap.netlify.app/",
+      "githubLink": "https://github.com/VictorApaez/book-swap",
+      "img": "./images/book-swap.png",
+      "alt": "Image of the web app the book swap",
+      "name": "The Book Swap",
+      "desc": "Inspired by Reddit, this web application is a network of communities where people can share their interests and ideas.",
+      "tech": [
+        {
+          "name": "MongoDB",
+          "link": "./icons/icons8-mongodb.png",
+          "alt": "MongoDB Icon"
+        },
+        {
+          "name": "React",
+          "link": "./icons/icons8-react-30.png",
+          "alt": "React Icon"
+        },
+        {
+          "name": "Express",
+          "link": "./icons/icons8-express-js-30.png",
+          "alt": "Express Icon"
+        },
+        {
+          "name": "Node",
+          "link": "./icons/icons8-node-js-48.png",
+          "alt": "Node Icon"
+        }
+      ]
     }
   ]
 }
