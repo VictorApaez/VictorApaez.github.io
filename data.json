@@ -121,7 +121,7 @@
       "img": "./images/book-swap.png",
       "alt": "Image of the web app the book swap",
       "name": "The Book Swap",
-      "desc": "Inspired by Reddit, this web application is a network of communities where people can share their interests and ideas.",
+      "desc": "An application that allows users to connect with other book lovers to find and swap books. Users can search for a specific book they are looking for, or browse through a list of books available online.",
       "tech": [
         {
           "name": "MongoDB",
