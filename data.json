@@ -1,6 +1,36 @@
 {
   "projectsData": [
     {
+      "demoLink": "https://the-book-swap.netlify.app/",
+      "githubLink": "https://github.com/VictorApaez/book-swap",
+      "img": "./images/book-swap.png",
+      "alt": "Image of the web app the book swap",
+      "name": "The Book Swap",
+      "desc": "An application that allows users to connect with other book lovers to find and swap books. Users can search for a specific book they are looking for, or browse through a list of books available online.",
+      "tech": [
+        {
+          "name": "MongoDB",
+          "link": "./icons/icons8-mongodb.png",
+          "alt": "MongoDB Icon"
+        },
+        {
+          "name": "React",
+          "link": "./icons/icons8-react-30.png",
+          "alt": "React Icon"
+        },
+        {
+          "name": "Express",
+          "link": "./icons/icons8-express-js-30.png",
+          "alt": "Express Icon"
+        },
+        {
+          "name": "Node",
+          "link": "./icons/icons8-node-js-48.png",
+          "alt": "Node Icon"
+        }
+      ]
+    },
+    {
       "demoLink": "https://thetrailers.netlify.app/",
       "githubLink": "https://github.com/VictorApaez/movie-trailers-app",
       "img": "/images/theTrailers.png",
@@ -92,36 +122,6 @@
       "alt": "Image of the web app Breddit",
       "name": "Breddit",
       "desc": "Inspired by Reddit, this web application is a network of communities where people can share their interests and ideas.",
-      "tech": [
-        {
-          "name": "MongoDB",
-          "link": "./icons/icons8-mongodb.png",
-          "alt": "MongoDB Icon"
-        },
-        {
-          "name": "React",
-          "link": "./icons/icons8-react-30.png",
-          "alt": "React Icon"
-        },
-        {
-          "name": "Express",
-          "link": "./icons/icons8-express-js-30.png",
-          "alt": "Express Icon"
-        },
-        {
-          "name": "Node",
-          "link": "./icons/icons8-node-js-48.png",
-          "alt": "Node Icon"
-        }
-      ]
-    },
-    {
-      "demoLink": "https://the-book-swap.netlify.app/",
-      "githubLink": "https://github.com/VictorApaez/book-swap",
-      "img": "./images/book-swap.png",
-      "alt": "Image of the web app the book swap",
-      "name": "The Book Swap",
-      "desc": "An application that allows users to connect with other book lovers to find and swap books. Users can search for a specific book they are looking for, or browse through a list of books available online.",
       "tech": [
         {
           "name": "MongoDB",

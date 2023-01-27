@@ -1,26 +1,22 @@
+import data from "./data.json" assert { type: "json" };
+
 let projectsDiv = document.querySelector(".projects");
-fetch("./data.json")
-  .then((res) => res.json())
-  .then((res) => {
-    createProjects(res);
-  });
 
-function createProjects(data) {
-  data.projectsData.forEach((project, i) => {
-    const { demoLink, githubLink, img, alt, name, desc, tech } = project;
+data.projectsData.forEach((project, i) => {
+  const { demoLink, githubLink, img, alt, name, desc, tech } = project;
 
-    let allIcons = "";
-    tech.forEach(({ name, link, alt }) => {
-      allIcons += `<div class="project__tech__icon">
+  let allIcons = "";
+  tech.forEach(({ name, link, alt }) => {
+    allIcons += `<div class="project__tech__icon">
             <img src="${link}" alt="${alt}">
             <p>${name}</p>
           </div>
         `;
-    });
+  });
 
-    let reverse = "";
-    if (i % 2 != 0) reverse = "reverse";
-    let html = `<div class="project ${reverse}">
+  let reverse = "";
+  if (i % 2 != 0) reverse = "reverse";
+  let html = `<div class="project ${reverse}">
       <a href="${demoLink}" target="_blank">
         <img class="project__img" src="${img}" alt="${alt}">
       </a>
@@ -38,6 +34,5 @@ function createProjects(data) {
         </div>
       </div>
     </div>`;
-    projectsDiv.insertAdjacentHTML("beforeend", html);
-  });
-}
+  projectsDiv.insertAdjacentHTML("beforeend", html);
+});
