@@ -14,6 +14,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: rgb(194, 194, 194);
 }
 header {
   display: flex;
@@ -48,7 +49,7 @@ header {
 .nav__li > a {
   text-decoration: none;
   padding: 2px;
-  color: white;
+  color: rgb(194, 194, 194);
 }
 .nav__li > a:hover {
   border-bottom: 2px solid;
@@ -94,7 +95,6 @@ header {
   width: 100%;
   background: url(./images/bg4.jpg);
   background-size: cover;
-  color: white;
 }
 
 .hero__info {
@@ -104,6 +104,7 @@ header {
 .hero__h1 {
   font-size: 3.8rem;
   margin-bottom: 15px;
+  color: rgb(229, 229, 229);
 }
 .hero__subHeading {
   font-size: 1.5rem;
@@ -146,6 +147,7 @@ header {
   display: flex;
   justify-content: center;
   background-color: rgb(234, 234, 234);
+  color: rgb(76, 76, 76);
   width: 100%;
 }
 .about-container {
@@ -180,7 +182,7 @@ header {
   justify-content: center;
   align-items: center;
   background-color: rgb(30, 30, 30);
-  color: white;
+  /* color: white; */
   width: 100%;
   padding: 60px 40px;
 }
@@ -199,7 +201,6 @@ header {
   justify-content: space-between;
   padding: 20px 20px;
   background-color: rgb(36, 36, 36);
-  color: white;
   margin: 50px 10px;
 }
 .project__img {
@@ -208,7 +209,6 @@ header {
   object-fit: cover;
   background-color: black;
   display: block;
-  /* margin: 20px 30px; */
   transition: all 0.3s ease-in-out;
   cursor: url("/images/pointing-finger.png"), auto;
 }
@@ -219,13 +219,12 @@ header {
 .project__info {
   display: flex;
   flex-direction: column;
-  /* padding: 30px; */
   max-width: 350px;
   justify-content: center;
 }
 .project__title {
   margin-bottom: 10px;
-  color: #ededed;
+  color: rgb(247, 247, 247);
 }
 .project__description {
   line-height: 25px;
@@ -288,6 +287,7 @@ header {
 .contact-container > h2 {
   font-size: 2rem;
   margin-bottom: 10px;
+  color: white;
 }
 .contact-container > h5 {
   font-size: 1rem;
