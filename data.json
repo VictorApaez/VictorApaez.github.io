@@ -31,6 +31,31 @@
       ]
     },
     {
+      "demoLink": "https://code-vision.vercel.app/dashboard/bubblesort",
+      "githubLink": "https://github.com/VictorApaez/code-vision",
+      "img": "/images/bubblesort.png",
+      "alt": "Image of the web app Code Vision",
+      "name": "Code Vision",
+      "desc": "Designed to help users visualize and understand various sorting algorithms",
+      "tech": [
+        {
+          "name": "TypeScript",
+          "link": "./icons/icons8-typescript-48.png",
+          "alt": "TypeScript Icon"
+        },
+        {
+          "name": "Next",
+          "link": "./icons/icons8-next-48.png",
+          "alt": "Next Icon"
+        },
+        {
+          "name": "Tailwind CSS",
+          "link": "./icons/icons8-tailwind-css-48.png",
+          "alt": "Tailwind CSS Icon"
+        }
+      ]
+    },
+    {
       "demoLink": "https://thetrailers.netlify.app/",
       "githubLink": "https://github.com/VictorApaez/movie-trailers-app",
       "img": "/images/theTrailers.png",
