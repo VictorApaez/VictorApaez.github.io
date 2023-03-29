@@ -36,7 +36,7 @@
       "img": "/images/bubblesort.png",
       "alt": "Image of the web app Code Vision",
       "name": "Code Vision",
-      "desc": "Designed to help users visualize and understand various sorting algorithms",
+      "desc": "Designed an interactive dashboard to help users visualize and understand various sorting algorithms.",
       "tech": [
         {
           "name": "TypeScript",
