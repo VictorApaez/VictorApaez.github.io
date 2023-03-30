@@ -22,7 +22,7 @@ header {
   align-items: center;
   position: fixed;
   top: 0;
-  height: 60px;
+  height: 80px;
   width: 100%;
   background-color: black;
   box-shadow: 0px 5px 40px 3px rgba(0, 0, 0, 1);
@@ -75,6 +75,7 @@ header {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  z-index: 999;
 }
 .back-to-top:hover {
   transform: scale(1.05);
@@ -104,7 +105,7 @@ header {
 .hero__h1 {
   font-size: 3.8rem;
   margin-bottom: 15px;
-  color: rgb(229, 229, 229);
+  color: rgb(248, 248, 248);
 }
 .hero__subHeading {
   font-size: 1.5rem;
@@ -146,9 +147,27 @@ header {
 .about {
   display: flex;
   justify-content: center;
-  background-color: rgb(234, 234, 234);
-  color: rgb(76, 76, 76);
+  background: linear-gradient(
+    180deg,
+    rgb(10, 10, 10) 0%,
+    rgb(0, 26, 37) 31%,
+    rgb(10, 10, 10) 100%
+  );
+  color: rgb(153, 153, 153);
   width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.about_svg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -200;
+  /* transform: rotate(260deg); */
+  max-width: 100%;
+  max-height: 100%;
 }
 .about-container {
   display: flex;
@@ -161,7 +180,7 @@ header {
 .about__img {
   width: 200px;
   border-radius: 50%;
-  border: 2px solid #e63946;
+  border: 2px solid rgb(230, 57, 70);
   padding: 5px;
 }
 .about__info {
@@ -172,20 +191,49 @@ header {
 .about__h2 {
   font-size: 2rem;
   margin-bottom: 15px;
+  color: white;
 }
 .about__p {
 }
 /* ======== PROJECTS ================================== */
-.projects {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(30, 30, 30);
-  /* color: white; */
+
+.project__section {
+  background: linear-gradient(
+    180deg,
+    rgb(10, 10, 10) 0%,
+    rgb(0, 26, 37) 31%,
+    rgb(10, 10, 10) 100%
+  );
+  padding: 80px 10px;
   width: 100%;
-  padding: 60px 40px;
+  text-align: center;
 }
+
+.project__section h1 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+.projects {
+  display: grid;
+  grid-template-rows: auto;
+  justify-items: center;
+  width: 100%;
+  grid-gap: 60px;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 1000px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1444px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .projects__header {
   font-size: 2.5rem;
   text-align: center;
@@ -196,19 +244,26 @@ header {
 }
 .project {
   display: flex;
-  max-width: 810px;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
+  height: 100%;
   justify-content: space-between;
-  padding: 20px 20px;
-  background-color: rgb(36, 36, 36);
-  margin: 50px 10px;
+  padding: 2rem;
+  max-width: 600px;
+  /* background-color: rgb(69, 69, 69); */
+  box-shadow: 2px 2px 35px 10px rgb(0, 0, 0);
+  border-radius: 10px;
+  min-height: 500px;
+  height: fit-content;
 }
 .project__img {
   height: 200px;
-  width: 350px;
+  width: 100%;
   object-fit: cover;
   background-color: black;
   display: block;
+  border-radius: 10px;
   transition: all 0.3s ease-in-out;
   cursor: url("/images/pointing-finger.png"), auto;
 }
@@ -218,9 +273,18 @@ header {
 }
 .project__info {
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
   max-width: 350px;
-  justify-content: center;
+  /* height: 100%; */
+  padding-top: 20px;
+  justify-content: space-between;
+}
+
+.project__info > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .project__title {
   margin-bottom: 10px;
@@ -229,6 +293,7 @@ header {
 .project__description {
   line-height: 25px;
   margin-bottom: 10px;
+  text-align: start;
 }
 
 .project__tech__icons {
@@ -270,15 +335,27 @@ header {
 #contact {
   padding: 60px 20px;
   width: 100%;
+  height: 80vh;
   display: flex;
   justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    rgb(10, 10, 10) 0%,
+    rgb(0, 26, 37) 31%,
+    rgb(10, 10, 10) 100%
+  );
 }
+
 .contact-container {
-  background-color: rgb(36, 36, 36);
+  background-color: rgb(21, 21, 21);
+  box-shadow: 2px 2px 35px 10px rgb(0, 0, 0);
+
   border-radius: 10px;
   padding: 50px;
   color: rgb(194, 194, 194);
   max-width: 600px;
+  max-height: 400px;
 }
 .contact-container > p {
   font-size: 1.2rem;
@@ -320,7 +397,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: rgb(10, 10, 10);
 }
 .footer__header {
   color: white;
@@ -441,27 +518,8 @@ footer > p {
   .about__h2 {
     text-align: center;
   }
-  /* ======== PROJECT ================================== */
-  .project {
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-  }
-  .project__img {
-    margin-bottom: 20px;
-  }
-  .project__info {
-    align-items: center;
-  }
-}
 
-@media (max-width: 800px) {
-  .project__img {
-    width: 300px;
-  }
-  .project__info {
-    width: 300px;
-  }
+  /* ======== PROJECT ================================== */
 }
 
 /* ICONS ==================================== */

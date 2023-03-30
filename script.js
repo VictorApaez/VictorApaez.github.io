@@ -33,7 +33,7 @@ let prev = window.pageYOffset;
 window.onscroll = function () {
   let current = window.pageYOffset;
   let num;
-  prev > current ? (num = "0") : (num = "-60px");
+  prev > current ? (num = "0") : (num = "-80px");
   document.querySelector(".scroll-effect").style.top = `${num}`;
   prev = current;
 
