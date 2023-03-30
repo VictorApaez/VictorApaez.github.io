@@ -6,7 +6,7 @@
       "img": "./images/book-swap.png",
       "alt": "Image of the web app the book swap",
       "name": "The Book Swap",
-      "desc": "An application that allows users to connect with other book lovers to find and swap books. Users can search for a specific book they are looking for, or browse through a list of books available online.",
+      "desc": "Users can search for a specific book, or browse through a list of books available online.",
       "tech": [
         {
           "name": "MongoDB",
@@ -86,7 +86,7 @@
       "img": "/images/LoL.png",
       "alt": "Image of the web app League of Legends",
       "name": "League of Legends",
-      "desc": "With over 117 million active users on League of Legends, this web application helps gamers search and build teams with their favorite characters and items.",
+      "desc": "This web application helps gamers search and build teams with their favorite characters and items.",
       "tech": [
         {
           "name": "MongoDB",
