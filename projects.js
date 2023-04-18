@@ -23,6 +23,7 @@ function createProjects(data) {
     let html = `<div class="project">
       <a href="${demoLink}" target="_blank">
         <img class="project__img" src="${img}" alt="${alt}">
+        <div class="project__img-overlay"></div>
       </a>
       <div class="project__info">
         <div>
