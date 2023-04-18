@@ -212,6 +212,7 @@ header {
 .project__section h1 {
   font-size: 3rem;
   margin-bottom: 40px;
+  color: white;
 }
 .projects {
   display: grid;
@@ -251,11 +252,15 @@ header {
   justify-content: space-between;
   padding: 2rem;
   max-width: 600px;
-  /* background-color: rgb(69, 69, 69); */
+  background-color: rgba(9, 66, 91, 0.1);
   box-shadow: 2px 2px 35px 10px rgb(0, 0, 0);
   border-radius: 10px;
   min-height: 500px;
   height: fit-content;
+}
+
+.project > a {
+  position: relative;
 }
 .project__img {
   height: 200px;
@@ -266,6 +271,15 @@ header {
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
   cursor: url("/images/pointing-finger.png"), auto;
+}
+.project__img-overlay {
+  width: 100%;
+  z-index: 10;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
 }
 .project__img:hover {
   transform: scale(1.1);
